@@ -1,0 +1,34 @@
+{
+    "name": "linnella/helpers",
+    "description": "Helpers extension for admin",
+    "type": "library",
+    "keywords": ["helpers"],
+       "license": "MIT",
+    "authors": [
+        {
+            "name": "171922",
+            "email": "171922@ukr.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.5.*",
+        "linnella/core": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "laravel/laravel": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\Admin\\Helpers\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Core\\Admin\\Helpers\\HelpersServiceProvider"
+            ]
+        }
+    }
+}
